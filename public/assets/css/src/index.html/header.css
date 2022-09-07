@@ -1,0 +1,10 @@
+header {
+    width: 100vw;
+    text-align: center;
+}
+
+header>input[type="search"] {
+    font-size: 1.4rem;
+    padding: 12px 20px;
+    outline: none;
+}
