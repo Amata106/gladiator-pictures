@@ -1,7 +1,9 @@
-# gladiator-pictures
+# Gladiator-pictures
 Create a databse for pictures of gladiators
 
-## Organozing of the project
+https://gladiator-pictures.web.app/
+
+## Organizing of the project
 
 ### Database
 Every element has : 
