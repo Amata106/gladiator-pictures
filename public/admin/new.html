@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../../assets/css/src/admin/new.html/header.css">
     <link rel="stylesheet" href="../../assets/css/src/admin/new.html/main.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
     <!-- JS -->
 
     <script src="/__/firebase/9.6.4/firebase-app-compat.js"></script>
@@ -20,6 +22,7 @@
     <script src="/__/firebase/9.6.4/firebase-performance-compat.js"></script>
 
     <script src="../../assets/js/utils/db.js"></script>
+    <script defer src="../../assets/js/src/admin/new.html/new.js"></script>
 </head>
 
 <body>
@@ -28,54 +31,80 @@
     </header>
     <main>
         <div class="container">
-            <label for="century">Century:</label>
-            <input type="text" id="century" name="century" placeholder="Second Cent">
+            <div id="imgs-container">
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <img src="../assets/img/pinguin-kaiserpinguin.jpg">
+                </div>
+                <div>
+                    <i class="fa-regular fa-trash-can"></i>
+                    <img src="../assets/img/pingu.jpeg">
+                </div>
+                <div class="img-plus">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <form enctype="multipart/form-data">
+                <label for="century">Century:</label>
+                <select name="" id="">
+                    <option value="1st century">1st century</option>
+                    <option value="2nd century">2nd century</option>
+                    <option value="3rd century">3rd century</option>
+                    <option value="4th century">4th century</option>
+                    <option value="5th century">5th century</option>
+                    <option value="6th century">6th century</option>
+                    <option value="7th century">7th century</option>
+                    <option value="8th century">8th century</option>
+                    <option value="9th century">9th century</option>
+                    <option value="10st century">10st century</option>
+                </select>
 
-            <label for="dating-number">Dating Number:</label>
-            <input type="number" id="dating-number" name="dating-number" min="0" max="100" step="1">
+                <label for="dating-number">Dating Number:</label>
+                <input type="number" id="dating-number" name="dating_number" min="0" max="900" step="10" value="230">
 
-            <label for="description">Description:</label>
-            <input type="text" id="description" name="description" placeholder="lol">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" placeholder="lol">
 
-            <label for="gladiator-type">Gladiator Type:</label>
-            <select id="gladiator-type" name="gladiator-type">
-                <option value="0">Murmillo</option>
-            </select>
+                <label for="gladiator-type">Gladiator Type:</label>
+                <select id="gladiator-type" name="gladiator_type">
+                    <option value="0">Murmillo</option>
+                </select>
 
-            <label for="image-0">Image 1 URL:</label>
-            <input type="text" id="image-0" name="image-0" placeholder="url">
+                <label for="image-0">Image 1 URL:</label>
+                <input type="text" id="image-0" name="image_0" placeholder="url">
 
-            <label for="image-1">Image 2 URL:</label>
-            <input type="text" id="image-1" name="image-1" placeholder="url">
+                <label for="image-1">Image 2 URL:</label>
+                <input type="text" id="image-1" name="image_1" placeholder="url">
 
-            <label for="literature-0">Literature 1 Source:</label>
-            <input type="text" id="literature-0" name="literature-0" placeholder="sources">
+                <label for="literature-0">Literature 1 Source:</label>
+                <input type="text" id="literature-0" name="literature-0" placeholder="sources">
 
-            <label for="literature-1">Literature 2 Source:</label>
-            <input type="text" id="literature-1" name="literature-1" placeholder="sources">
+                <label for="literature-1">Literature 2 Source:</label>
+                <input type="text" id="literature-1" name="literature-1" placeholder="sources">
 
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" placeholder="Traunstein">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Traunstein">
 
-            <label for="coords">Coordinates:</label>
-            <input type="text" id="coords" name="coords" placeholder="0.0.0.0">
+                <label for="coords">Coordinates:</label>
+                <input type="text" id="coords" name="coords" placeholder="0.0.0.0">
 
-            <label for="country">Country:</label>
-            <input type="text" id="country" name="country" placeholder="Germany">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Germany">
 
-            <label for="museum-collection">Museum Collection:</label>
-            <input type="text" id="museum-collection" name="museum-collection" placeholder="Traunstein Museum">
+                <label for="museum-collection">Museum Collection:</label>
+                <input type="text" id="museum-collection" name="museum-collection" placeholder="Traunstein Museum">
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Traunstein Fibel">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Traunstein Fibel">
 
-            <label for="origin">Origin:</label>
-            <input type="text" id="origin" name="origin" placeholder="Traunstein">
+                <label for="origin">Origin:</label>
+                <input type="text" id="origin" name="origin" placeholder="Traunstein">
 
-            <label for="type">Type:</label>
-            <input type="text" id="type" name="type" placeholder="fibula">
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type" placeholder="fibula">
 
-            <input type="submit" value="Submit">
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </main>
 </body>
