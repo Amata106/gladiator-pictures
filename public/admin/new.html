@@ -21,8 +21,10 @@
     <script src="/__/firebase/9.6.4/firebase-storage-compat.js"></script>
     <script src="/__/firebase/9.6.4/firebase-performance-compat.js"></script>
 
-    <script src="../../assets/js/utils/db.js"></script>
-    <script defer src="../../assets/js/src/admin/new.html/new.js"></script>
+    <script src="../assets/js/utils/db.js"></script>
+    <script src="../assets/js/utils/uuidv4.js"></script>
+    <script defer src="../assets/js/src/admin/new.html/new.js"></script>
+    <script defer src="../assets/js/src/admin/new.html/imgs.js"></script>
 </head>
 
 <body>
@@ -32,15 +34,8 @@
     <main>
         <div class="container">
             <div id="imgs-container">
-                <div>
-                    <i class="fa-regular fa-trash-can"></i>
-                    <img src="../assets/img/pinguin-kaiserpinguin.jpg">
-                </div>
-                <div>
-                    <i class="fa-regular fa-trash-can"></i>
-                    <img src="../assets/img/pingu.jpeg">
-                </div>
                 <div class="img-plus">
+                    <input type="file" id="img-plus-file" value="c:\fakepath" multiple>
                     <i class="fa-solid fa-plus"></i>
                 </div>
             </div>

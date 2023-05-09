@@ -28,7 +28,7 @@
 
 .fa-trash-can {
     padding: 12px;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     font-size: 1.2rem;
     transition: .2s;
@@ -53,6 +53,16 @@
     color: #45a049;
 }
 
+
+.img-plus>input[type="file"] {
+    position: absolute;
+    z-index: 1;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 12px;
+    opacity: 0;
+    cursor: pointer;
+}
 
 label {
     display: block;
